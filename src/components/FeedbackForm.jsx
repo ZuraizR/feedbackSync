@@ -68,7 +68,9 @@ const FeedbackForm = () => {
           <input
             type='text'
             onChange={handleTextChange}
+            onKeyUp={handleTextChange}
             placeholder='Enter your review'
+            autoComplete='off'
             value={text}
             id='text-input'
           />
